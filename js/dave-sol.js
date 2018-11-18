@@ -48,7 +48,7 @@
   const range = document.getElementById("range");
 
   const rangeAction = () => {
-    theValue.innerText = range.value;
+    theValue.innerText = `${range.value}%`;
     theValue.style.width = `${range.value}%`;
   }
 
