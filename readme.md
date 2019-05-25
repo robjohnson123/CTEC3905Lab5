@@ -4,3 +4,4 @@ A demo for HTML5 form fields.
 
 - takes user input for date
 - combines colour input with range
+- uses datalist to pre-populate field choices
