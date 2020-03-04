@@ -19,7 +19,6 @@ fieldset {
   margin-bottom: 0.5em;
 }
 
-/* overrides the ugly browser default date field style */
 input[type="date"] {
   font-family: inherit;
   font-size: 1em;
