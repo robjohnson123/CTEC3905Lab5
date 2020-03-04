@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>input fields</title>
+  <title>Lab 5</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 id="date">HTML5 forms: </h1>
-  <form>
+  <h1 id="date" align=center>Lab 5 - HTML5 forms: </h1>
+  <form id="the-form">
   <fieldset>
-  <label for="datePicker">Date:</label>
-  <input type="date" id="datePicker" list="notabledays">
+    <label for="datePicker">Choose a date:</label>
+        <input type="date" id="datePicker" list="notabledays">
+        <datalist id="notabledays">
+          <option label="Morton Heilig, “Sensorama” immersive system" value="1962-08-28">
+          <option label="Ivan Sutherland, “Ultimate Display” VR speech" value="1965-11-30">
+          <option label="Doug Englebart, The Mother of All Demos" value="1968-11-09">
+          <option label="The First Unix manual" value="1971-11-01">
+        </datalist>
   </fieldset>
 
   <fieldset>
@@ -26,6 +32,7 @@
     <input type="range" id="theRange" max="100" value="50">
   </fieldset>
   </form>
+  <p id="theDate"> </p>
   <p id="colourBox" class="value">50%</p>
 
   <script src="js/inputs.js"></script>

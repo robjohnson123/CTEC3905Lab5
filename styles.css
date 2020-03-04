@@ -24,3 +24,7 @@ input[type="date"] {
   font-size: 1em;
   color: inherit;
 }
+
+h1 {
+  color: #000000
+}
