@@ -7,38 +7,26 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HTML5 forms: <span id="theDate"></span></h1>
+  <h1 id="date">HTML5 forms: </h1>
+  <form>
+  <fieldset>
+  <label for="datePicker">Date:</label>
+  <input type="date" id="datePicker" list="notabledays">
+  </fieldset>
 
-  <form id="the-form">
-
-    <fieldset>
-      <label for="datePicker">Choose a date:</label>
-      <input type="date" id="datePicker" list="notabledays">
-      <!-- a datalist offers preset dates: -->
-      <datalist id="notabledays">
-        <option label="Morton Heilig, “Sensorama” immersive system" value="1962-08-28">
-        <option label="Ivan Sutherland, “Ultimate Display” VR speech" value="1965-11-30">
-        <option label="Doug Englebart, The Mother of All Demos" value="1968-11-09">
-        <option label="The First Unix manual" value="1971-11-01">
-      </datalist>
-    </fieldset>
-
-    <fieldset>
-      <input type="color" id="theColour" value="#eeccff" list="colours">
-      <!-- a datalist offers preset choices: -->
-      <datalist id="colours">
+  <fieldset>
+    <input type="color" id="theColour" value="#eeccff" list="colours">
+    <datalist id="colours">
         <option value="#ff0000">
-        <option value="#00ff00">
-        <option value="#0000ff">
-        <option value="#ffff00">
-        <option value="#00ffff">
-      </datalist>
-      <input type="range" id="theRange" max="100" value="50">
-    </fieldset>
-
+        </option><option value="#00ff00">
+        </option><option value="#0000ff">
+        </option><option value="#ffff00">
+        </option><option value="#00ffff">
+      </option></datalist>
+    <input type="range" id="theRange" max="100" value="50">
+  </fieldset>
   </form>
 
-  <p id="colourBox" class="value">50%</p>
 
   <script src="js/inputs.js"></script>
 </body>
