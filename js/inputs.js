@@ -2,8 +2,6 @@
 
 
 (function () {
-
-  
   const showDate = () => {
     let d = new Date(datePicker.value);
     theDate.innerText = d.toDateString();
